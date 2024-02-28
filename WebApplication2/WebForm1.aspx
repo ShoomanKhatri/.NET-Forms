@@ -9,16 +9,18 @@
 <body>
     <form id="form1" runat="server">
        <div>
-            <label for="name">Name:</label>
-            <asp:TextBox ID="txtName" runat="server"></asp:TextBox><br /><br />
+            <label for="txtName">Name:</label>
+            <asp:TextBox ID="txtName" runat="server"></asp:TextBox><br /><br /><br /><br />
             
-            <label for="email">Email:</label>
+            <label for="txtEmail">Email:</label>
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox><br /><br />
             
-            <label for="message">Message:</label>
+            <label for="txtMessage">Message:</label>
             <asp:TextBox ID="txtMessage" runat="server" TextMode="MultiLine" Rows="4" OnTextChanged="txtMessage_TextChanged"></asp:TextBox><br /><br />
             
             <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+           <asp:Label ID="lblErrorMessage" runat="server" Text="" ForeColor="Red"></asp:Label>
+
         </div>
     </form>
 </body>
